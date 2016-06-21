@@ -22,6 +22,7 @@ private:
 public:
     int pressed( char ch ); //计算器按下一个键
     double count();         //得到运算结果
+	
 
 };
 

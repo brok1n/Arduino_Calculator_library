@@ -6,6 +6,7 @@
 
 #include <ctype.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 
 Bcalculator::Bcalculator() {
@@ -119,8 +120,11 @@ int Bcalculator::pressed(char ch) {
     return 0;
 }
 
+
+
 double Bcalculator::count() {
 
+	
     int index = 0;
     for (int j = 0; j < mCircleIndex; ++j) {
         char currentOperator = mOperator[j];
@@ -162,6 +166,12 @@ double Bcalculator::count() {
             result -= mValue[k+1];
         }
     }
+	mTmpNumberIndex = 0;
+	mTmpNumber[0] = '\0';
+    mCircleIndex = 0;
+	mValue[0] = '\0';
+    mOperator[0] = '\0';
+	
     return result;
 }
 
