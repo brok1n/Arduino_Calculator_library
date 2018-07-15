@@ -1,5 +1,5 @@
 
-Bcalculator		KEYWORD1
+Bcalculator	KEYWORD1
 
-pressed			KEYWORD2
-count			KEYWORD2
+pressed	KEYWORD2
+count	KEYWORD2
